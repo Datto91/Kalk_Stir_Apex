@@ -1,0 +1,45 @@
+# Arduino Kalk Stir Controller with ESP and Neptune Apex Integration
+
+This Arduino project creates a smart control system for a Kalk Stir, often used in aquarium maintenance. The system is powered by the ESP8266 Wi-Fi Module and integrates with the Neptune Systems Apex Controller for automated control.
+
+## Features
+
+- Wi-Fi Connection for remote access and adjustments.
+- Controls the Kalk Stir based on commands from the Neptune Apex system.
+- Error checking and alerting for deviation from normal operational parameters.
+
+## Requirements
+
+- ESP8266 Wi-Fi Module
+- Arduino IDE
+- ArduinoJson library
+- Neptune Systems Apex Controller
+- A Kalk Stir device
+
+## Setup and Installation
+
+1. Install the required libraries: ArduinoJson, ESP8266WiFi, ESP8266HTTPClient, WiFiClient, and AccelStepper.
+
+2. Open the Arduino code in the Arduino IDE and replace the placeholders in the following lines with your actual information:
+
+    ```c++
+    #define WIFI_SSID "YOUR_WIFI_SSID"
+    #define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+    const char* url = "http://YOUR_URL/cgi-bin/status.json";
+    const char* username = "YOUR_USERNAME";
+    const char* password = "YOUR_PASSWORD";
+    ```
+
+3. Upload the code to your ESP8266 module.
+
+## Usage
+
+Once setup and installation is complete, the Arduino Kalk Stir controller will operate based on commands from the Neptune Apex system. It will control the Kalk Stir process, ensuring proper mixing and distribution of the kalkwasser solution in the aquarium.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE) - see the LICENSE file for more details.
