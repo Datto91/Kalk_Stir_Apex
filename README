@@ -6,7 +6,6 @@ This Arduino project creates a smart control system for a Kalk Stir, often used 
 
 - Wi-Fi Connection for remote access and adjustments.
 - Controls the Kalk Stir based on commands from the Neptune Apex system.
-- Error checking and alerting for deviation from normal operational parameters.
 
 ## Requirements
 
