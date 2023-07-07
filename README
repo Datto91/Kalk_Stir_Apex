@@ -31,6 +31,10 @@ This Arduino project creates a smart control system for a Kalk Stir, often used 
 
 3. Upload the code to your ESP8266 module.
 
+## Neptune Apex Setup
+
+On your Neptune Systems Apex Controller, you need to create an output named `KALK_STIR`. Then, use the Apex's scripting logic to set the output to cycle on a schedule. This will ensure the Kalk Stir operates at the optimal times for your aquarium's needs.
+
 ## Usage
 
 Once setup and installation is complete, the Arduino Kalk Stir controller will operate based on commands from the Neptune Apex system. It will control the Kalk Stir process, ensuring proper mixing and distribution of the kalkwasser solution in the aquarium.
